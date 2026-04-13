@@ -1,5 +1,5 @@
 import { CanceledError } from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import userService from "../services/user-service";
 import type { User } from "../services/user-service";
 function useUsers() {

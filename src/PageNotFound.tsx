@@ -1,5 +1,3 @@
-import React from "react";
-
 const PageNotFound = () => {
   return (
     <div className="border border-danger border-3 p-3">

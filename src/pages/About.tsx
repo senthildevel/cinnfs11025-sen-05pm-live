@@ -1,5 +1,3 @@
-import React from "react";
-
 const About = () => {
   return (
     <div className="border border-primary border-3 p-3">

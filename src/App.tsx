@@ -1,4 +1,4 @@
-import { Routes, Route, Link, NavLink, useLocation } from "react-router-dom";
+import { Routes, Route, NavLink, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -15,23 +15,23 @@ const App = () => {
         <nav className="mb-3">
           <ul className="nav">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
+              <NavLink className="nav-link" to="/cinnfs11025-sen-05pm-live">
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about-us">
+              <NavLink className="nav-link" to="/cinnfs11025-sen-05pm-live/about-us">
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact?page=true" state={{ isLoggedin: true }}>
+              <NavLink className="nav-link" to="/cinnfs11025-sen-05pm-live/contact?page=true" state={{ isLoggedin: true }}>
                 Contact
               </NavLink>
             </li>
 
             <li className="nav-item">
-              <NavLink className="nav-link" to="/users" end={true}>
+              <NavLink className="nav-link" to="/cinnfs11025-sen-05pm-live/users" end={true}>
                 Users
               </NavLink>
             </li>
@@ -39,11 +39,11 @@ const App = () => {
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/users" element={<UserList />} />
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="/cinnfs11025-sen-05pm-live" element={<Home />} />
+          <Route path="/cinnfs11025-sen-05pm-live/about-us" element={<About />} />
+          <Route path="/cinnfs11025-sen-05pm-live/contact" element={<Contact />} />
+          <Route path="/cinnfs11025-sen-05pm-live/users" element={<UserList />} />
+          <Route path="/cinnfs11025-sen-05pm-live/*" element={<PageNotFound />} />
         </Routes>
       </div>
     </>

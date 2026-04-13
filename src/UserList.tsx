@@ -1,9 +1,9 @@
 import useUsers from "./hooks/useUsers";
-import userService, { CanceledError } from "./services/user-service";
+import userService from "./services/user-service";
 import type { User } from "./services/user-service";
 
 const UserList = () => {
-  const { users, error, loader, setUsers, setError, setLoader } = useUsers();
+  const { users, error, loader, setUsers, setError } = useUsers();
   // https://jsonplaceholder.typicode.com/users
 
   const deleteUser = (user: User) => {
